@@ -1,0 +1,68 @@
+.intro {
+  position: relative;
+  box-shadow: inset 0 -2px #ffffff;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 27px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+      height: 58px;
+    }
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+      height: 57px;
+    }
+  }
+
+  .intro__image {
+    display: flex;
+    width: 281px;
+    height: auto;
+    padding-top: 87px;
+    padding-bottom: 86px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      height: auto;
+      padding-top: 78px;
+      padding-bottom: 91px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      height: auto;
+      padding-top: 79px;
+      padding-bottom: 90px;
+      position: relative;
+      width: 100%;
+      height: auto;
+    }
+
+    &--short {
+      width: 230px;
+      height: auto;
+      padding-top: 49px;
+      padding-bottom: 53px;
+
+      @media (min-width: $tablet-width) {
+        width: 456px;
+        height: auto;
+        padding-top: 94px;
+        padding-bottom: 117px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-top: 102px;
+        padding-bottom: 119px;
+      }
+    }
+  }
+}

@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "_variables";
+@import "_mixins";
+@import "fonts";
+@import "base";
+@import "blocks/no-js";
+@import "blocks/page-wrapper";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+@import "blocks/page-header";
+@import "blocks/logo";
+@import "blocks/intro";
+@import "blocks/page-main";
+@import "blocks/lead";
+@import "blocks/features";
+@import "blocks/offers";
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/review";
+@import "blocks/gallery";
+@import "blocks/assessment";
+@import "blocks/video";
+@import "blocks/copyright";

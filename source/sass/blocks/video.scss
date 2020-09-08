@@ -1,0 +1,236 @@
+.video {
+  height: auto;
+  background-color: $white;
+  margin-top: -30px;
+}
+
+.video__intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 0 22px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 63px 0 85px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 0 84px 0;
+  }
+
+  .video__intro-title {
+    @include font-set(18px, 26px, 700);
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      @include font-set(30px, 26px, 700);
+      padding-left: 170px;
+      padding-right: 170px;
+    }
+    @media (min-width: $desktop-width) {
+      padding-left: 400px;
+      padding-right: 400px;
+    }
+  }
+
+  .video__intro-text {
+    @include font-set(14px, 24px, 400);
+    text-align: center;
+    padding: 0 24px 0 23px;
+
+    @media (min-width: $tablet-width) {
+      @include font-set(14px, 21px, 400);
+      width: 60%;
+      margin: 9px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 40%;
+    }
+  }
+}
+
+.video__screen {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -7px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.video__screen img {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.video__player {
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 282px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 650px;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 800px;
+    margin-top: -100px;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+.video__controls {
+  position: absolute;
+  // display: flex;
+  // flex-wrap: wrap;
+}
+
+.video__controls::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -45px;
+  left: 20px;
+  height: 45px;
+  width: 281px;
+  background-color: rgba(0,0,0,0.5);
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.video__timeline {
+  display: block;
+  position: absolute;
+  left: 47px;
+  top: -25px;
+  height: 3px;
+  width: 230px;
+  background-color: rgba(255,255,255,0.5);
+
+  @media (min-width: $tablet-width) {
+    left: 152px;
+    top: -47px;
+    width: 395px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 292px;
+    top: -49px;
+    width: 500px;
+  }
+}
+
+.video__drag {
+  display: block;
+  position: absolute;
+  top: -28px;
+  left: 77px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    left: 265px;
+    top: -51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 406px;
+    top: -52px;
+  }
+}
+
+.video__wrapper-controls {
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 31px 28px 32px;
+  padding: 21px 0 16px 0;
+  // width: 90%;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    position: relative;
+    padding-top: 36px;
+    padding-bottom: 27px;
+    margin-top: -94px;
+    background-color: rgba(0, 0, 0, 0.5);
+    // width: 85%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 34px;
+    padding-bottom: 30px;
+    margin-top: -94px;
+    // width: 67%;
+  }
+}
+
+.video__control-buttons {
+  fill: #5c6870;
+  @media (min-width: $tablet-width) {
+    fill: #ffffff;
+  }
+}
+
+.video__wrapper-controls .video__control-item {
+  width: 30px;
+  height: 30px;
+}
+
+.video__control-item {
+  @include button-throw;
+  display: flex;
+  flex-wrap: nowrap;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &--replay {
+    position: relative;
+    left: -70px;
+    @media (min-width: $tablet-width) {
+      left: -245px;
+    }
+    @media (min-width: $desktop-width) {
+      left: -320px;
+    }
+  }
+
+  &--subtitles {
+    position: relative;
+    left: 50px;
+    @media (min-width: $tablet-width) {
+      left: 215px;
+    }
+    @media (min-width: $desktop-width) {
+      left: 290px;
+    }
+  }
+
+  &--fullscreen {
+    position: relative;
+    left: 81px;
+    @media (min-width: $tablet-width) {
+      left: 248px;
+    }
+    @media (min-width: $desktop-width) {
+      left: 322px;
+    }
+  }
+}

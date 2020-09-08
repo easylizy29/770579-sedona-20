@@ -1,0 +1,159 @@
+.lead {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: $white;
+
+  &--form {
+    padding: 22px 0 29px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 37px 0 86px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 88px 0 58px 0;
+    }
+  }
+
+  &--form .lead__text {
+    @include font-set(14px, 24px, 400);
+    padding: 0 30px 0 30px;
+
+    @media (min-width: $tablet-width) {
+      margin: 7px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 3px 0 0 0;
+    }
+  }
+
+  &--index {
+    padding: 0 0 0 0;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 645px;
+      left: 0;
+      right: 0;
+      height: 40px;
+      background-image: url("../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      @media (min-width: $tablet-width) {
+        background-image: none;
+      }
+      @media (min-width: $desktop-width) {
+        background-image: none;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 30px 20px 41px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 39px;
+      padding-bottom: 28px;
+    }
+  }
+
+  &--photo {
+    padding: 15px 0 24px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 41px 0 66px 0;
+    }
+    @media (min-width: $desktop-width) {
+      padding-top: 77px;
+      padding-bottom: 63px;
+    }
+  }
+
+  &--photo .lead__text {
+    @include font-set(14px, 24px, 400);
+    padding: 0 24px 19px 28px;
+
+    @media (min-width: $tablet-width) {
+      width: 70%;
+      margin: 0;
+      padding: 5px 24px 14px 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 42%;
+      padding: 0 35px 19px 35px;
+      margin: 2px 0 0 0;
+    }
+  }
+}
+
+.lead__title {
+  @include font-set(18px, 26px, 700);
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(23px, 28px, 700);
+    width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set(26px, 30px, 700);
+    width: 60%;
+    padding-bottom: 7px;
+  }
+
+  &--index {
+    @include font-set(18px, 26px, 700);
+    padding: 16px 0 10px 0;
+
+    @media (min-width: $tablet-width) {
+      @include font-set(21px, 26px, 700);
+      padding: 0 0 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 23px;
+      padding: 0 31px 13px 31px;
+    }
+  }
+
+  &--photo {
+    font-size: 19px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
+  }
+
+  &--form {
+    font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 31px;
+    }
+  }
+}
+
+.lead__text {
+  @include font-set(14px, 26px, 400);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42%;
+  }
+}

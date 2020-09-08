@@ -1,0 +1,82 @@
+.main-nav {
+  @include font-set(18px, 40px, 700);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  color: $white;
+  background-color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(14px, 40px, 700);
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+.main-nav__close {
+  @include button-throw;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-nav__list li {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+}
+
+a {
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
+}
+
+a:hover {
+  @media (min-width: $tablet-width) {
+    color: $primary-color;
+    }
+}
+
+a:active {
+
+  color: $hover-blue;
+  @media (min-width: $tablet-width) {
+    color: $grey-dark;
+  }
+}

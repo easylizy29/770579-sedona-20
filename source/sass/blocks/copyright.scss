@@ -1,0 +1,17 @@
+.copyright__link {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.copyright__link img {
+  display: block;
+  position: relative;
+  left: 4px;
+  top: 2px;
+
+  @media (min-width: $tablet-width) {
+    left: 10px;
+    top: 2px;
+  }
+}

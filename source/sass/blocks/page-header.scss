@@ -1,0 +1,103 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  background-color: $white;
+}
+
+.page-header__top {
+  position: relative;
+  width: 100%;
+  height: 60px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    height: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 0;
+  }
+}
+
+.page-header__menu-button {
+  @include button-throw;
+  position: absolute;
+  left: 280px;
+  margin-top: 15px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &--hide {
+    display: none;
+  }
+}
+
+.page-header__intro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  &--short {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 158px;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      height: 290px;
+      width: 100%;
+      background-image: url("../img/bg-back-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 300px;
+      background-image: url("../img/bg-back-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-back-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.page-header__triangle {
+  display: block;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}

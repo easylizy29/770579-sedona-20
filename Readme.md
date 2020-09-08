@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Лиза Патрикеева](https://up.htmlacademy.ru/adaptive/20/user/770579).
-* Наставник: `Неизвестно`.
+* Студент: [Лиза Патрикеева](https://up.htmlacademy.ru/adaptive/19/user/770579).
+* Наставник: [Сергей Кравченко] (https://htmlacademy.ru/profile/id13921).
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/770579-sedona-20) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/770579-sedona-19) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60807979-e1129f00-a18f-11e9-90d7-b44d2ff2c003.jpg">
 
@@ -52,9 +52,9 @@ git clone SSH-адрес_вашего_форка
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
+Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/770579-sedona-20.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/770579-sedona-20
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/770579-sedona-20/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/770579-sedona-20?type=dev
+[travis-image]: https://travis-ci.com/htmlacademy-adaptive/770579-sedona-19.svg?branch=master
+[travis-url]: https://travis-ci.com/htmlacademy-adaptive/770579-sedona-19
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/770579-sedona-19/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/770579-sedona-19?type=dev

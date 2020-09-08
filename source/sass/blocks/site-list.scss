@@ -1,0 +1,98 @@
+.site-list {
+  display: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+    list-style: none;
+    width: 100%;
+  }
+
+  &--show {
+    display: block;
+  }
+}
+
+.site-list__item {
+
+  &--active {
+    background-color: $primary-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 20%;
+    padding: 12px 0;
+    border: none;
+
+    &--active {
+      background-color: $white;
+      color: $brown;
+    }
+
+    &--left {
+      text-align: left;
+      @media (min-width: $desktop-width) {
+        text-align: center;
+      }
+    }
+
+    &--right {
+      text-align: right;
+      @media (min-width: $desktop-width) {
+        text-align: center;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+
+    &--active {
+      background-color: $white;
+      color: $brown;
+    }
+
+    &--left {
+      margin-right: 35px;
+      padding-right: 40px;
+    }
+
+    &--right {
+      margin-left: 35px;
+      padding-left: 40px;
+    }
+  }
+}
+
+.site-list__item:hover,
+.site-list__item:focus {
+  background-color: $hover-blue;
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.site-list__item:active {
+  background-color: $active-blue;
+  color: $hover-blue;
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    color: $primary-color;
+  }
+}
+
+.site-list__item:nth-child(2) {
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20%;
+  }
+}
