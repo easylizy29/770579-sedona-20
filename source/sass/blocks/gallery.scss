@@ -69,13 +69,15 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 0 2px 21px;
-      margin-top: -84px;
+      padding: 4px 0 2px 21px;
+      margin-top: -85px;
     }
   }
 
   &--big .assessment__button {
-    margin-right: 30px;
+    @media (min-width: $tablet-width) {
+    margin-right: 18px;
+    }
   }
 }
 
@@ -110,7 +112,7 @@ li.gallery__item img {
     align-items: center;
     background-color: $secondary-color;
     margin: 0 0 0 0;
-    padding: 19px 17px 9px 20px;
+    padding: 19px 19px 9px 20px;
   }
 
   @media (min-width: $desktop-width) {

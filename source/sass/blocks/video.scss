@@ -12,11 +12,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 63px 0 85px 0;
+    padding: 63px 0 79px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 67px 0 84px 0;
+    padding: 67px 0 78px 0;
   }
 
   .video__intro-title {
@@ -41,13 +41,13 @@
     padding: 0 24px 0 23px;
 
     @media (min-width: $tablet-width) {
-      @include font-set(14px, 21px, 400);
-      width: 60%;
+      @include font-set(14px, 24px, 400);
+      width: 67%;
       margin: 9px 0 0 0;
     }
 
     @media (min-width: $desktop-width) {
-      width: 40%;
+      width: 42%;
     }
   }
 }
