@@ -28,6 +28,7 @@
       padding-left: 170px;
       padding-right: 170px;
     }
+
     @media (min-width: $desktop-width) {
       padding-left: 400px;
       padding-right: 400px;
@@ -84,7 +85,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 800px;
-    margin-top: -100px;
     padding: 0;
     margin-top: 0;
   }
@@ -104,7 +104,7 @@
   left: 20px;
   height: 45px;
   width: 281px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -118,7 +118,7 @@
   top: -25px;
   height: 3px;
   width: 230px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 
   @media (min-width: $tablet-width) {
     left: 152px;
@@ -184,6 +184,7 @@
 
 .video__control-buttons {
   fill: #5c6870;
+
   @media (min-width: $tablet-width) {
     fill: #ffffff;
   }
@@ -204,9 +205,11 @@
   &--replay {
     position: relative;
     left: -70px;
+
     @media (min-width: $tablet-width) {
       left: -245px;
     }
+
     @media (min-width: $desktop-width) {
       left: -320px;
     }
@@ -215,9 +218,11 @@
   &--subtitles {
     position: relative;
     left: 50px;
+
     @media (min-width: $tablet-width) {
       left: 215px;
     }
+
     @media (min-width: $desktop-width) {
       left: 290px;
     }
@@ -226,9 +231,11 @@
   &--fullscreen {
     position: relative;
     left: 81px;
+
     @media (min-width: $tablet-width) {
       left: 248px;
     }
+
     @media (min-width: $desktop-width) {
       left: 322px;
     }

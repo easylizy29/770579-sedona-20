@@ -53,12 +53,6 @@
   }
 }
 
-.main-nav__list li {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  cursor: pointer;
-}
-
 a {
   color: $white;
 
@@ -70,12 +64,12 @@ a {
 a:hover {
   @media (min-width: $tablet-width) {
     color: $primary-color;
-    }
+  }
 }
 
 a:active {
-
   color: $hover-blue;
+
   @media (min-width: $tablet-width) {
     color: $grey-dark;
   }

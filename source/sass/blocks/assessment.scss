@@ -10,11 +10,8 @@
   }
 
   &--big {
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-      right: 20px;
-    }
+    position: relative;
+    right: 20px;
   }
 
   &--big .assessment__text {

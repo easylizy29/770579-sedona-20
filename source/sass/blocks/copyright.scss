@@ -15,3 +15,9 @@
     top: 2px;
   }
 }
+
+.copyright {
+  &--icon:hover {
+    fill: $hover-blue;
+  }
+}

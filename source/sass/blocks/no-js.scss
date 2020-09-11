@@ -1,6 +1,10 @@
 .no-js {
   .site-list {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+    }
   }
 
   .page-header__menu-button {

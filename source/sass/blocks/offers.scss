@@ -7,11 +7,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    padding: 19px 0 0 0;
+    padding: 14px 0 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 21px 0 0 0;
+    padding: 14px 0 0 0;
   }
 }
 
@@ -24,20 +24,30 @@
   text-transform: uppercase;
   margin-top: 16px;
   margin-bottom: 50px;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 700;
   color: $white;
-  pointer: cursor;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin: 20px 0 60px 0;
+    margin: 18px 0 60px 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 458px;
-    margin: 20px 0 67px 0;
+    margin: 21px 0 67px 0;
   }
+}
+
+.offers__button:hover,
+.offers__button:focus {
+  background-color: $hover-blue;
+}
+
+.offers__button:active {
+  background-color: $active-blue;
+  color: $hover-blue;
 }
 
 .offers__title {
@@ -48,6 +58,13 @@
   @media (min-width: $tablet-width) {
     @include font-set(30px, 40px, 700);
     width: 42%;
+    padding-top: 11px;
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set(30px, 40px, 700);
+    padding-top: 11px;
   }
 }
 
@@ -59,12 +76,14 @@
   margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
-    width: 60%;
-    margin: 0 0 28px 0;
+    width: 58%;
+    margin: 0 0 23px 0;
+    padding: 0 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 45%;
+    padding: 0 70px;
   }
 }
 

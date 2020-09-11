@@ -5,11 +5,11 @@
     display: inline-block;
     width: 33.333333%;
     vertical-align: middle;
-    padding: 36px 16px 30px 0
+    padding: 36px 16px 30px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 37px 16px 30px 0
+    padding: 37px 16px 30px 0;
   }
 }
 
@@ -23,7 +23,7 @@
 }
 
 .social__link {
-  display: block;
+  display: inline-block;
   height: 46px;
   width: 46px;
   background-color: $primary-color;
@@ -31,7 +31,6 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  display: inline-block;
 
   &--twitter {
     background-size: 23px 20px;
@@ -47,14 +46,19 @@
     background-size: 24px 19px;
     background-image: url("../img/youtube.svg");
   }
-}
 
-.social-link:hover {
-  background-color: $active-blue;
-  cursor: pointer;
-}
+  &--twitter:hover,
+  &--twitter:focus,
+  &--facebook:hover,
+  &--facebook:focus,
+  &--youtube:hover,
+  &--youtube:focus {
+    background-color: $hover-blue;
+  }
 
-.social-link:active {
-  background-color: $active-blue;
-  cursor: pointer;
+  &--twitter:active,
+  &--facebook:active,
+  &--youtube:active {
+    background-color: $active-blue;
+  }
 }

@@ -7,7 +7,7 @@
 
 @mixin font-set($size, $line-height, $weight:null) {
   font-size: $size;
-  line-height: floor($line-height / $size * 100) / 100;
+  line-height: $line-height;
   font-weight: $weight;
 }
 

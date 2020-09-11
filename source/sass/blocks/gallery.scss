@@ -53,7 +53,6 @@
   }
 
   &--big {
-
     @media (min-width: $tablet-width) {
       width: 100%;
     }
@@ -64,7 +63,6 @@
   }
 
   &--big .gallery__caption {
-
     @media (min-width: $tablet-width) {
       padding: 17px 0 9px 20px;
       margin-top: -7px;
@@ -82,9 +80,7 @@
 }
 
 .gallery__info {
-
   &--small {
-
     @media (min-width: $tablet-width) {
       height: 268px;
       margin-bottom: -11px;
@@ -118,9 +114,7 @@ li.gallery__item img {
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -80px;
     background-color: rgba(0, 0, 0, 0.3);
-    // padding: 0 0 8px 21px;
     color: $white;
     margin: -7px 0 0 0;
     padding: 16px 17px 8px 20px;

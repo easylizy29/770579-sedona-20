@@ -75,11 +75,16 @@
   }
 
   &--contacts {
-    margin: 24px 0 35px 0;
+    margin: 24px 0 39px 0;
     padding: 0;
+
     @media (min-width: $tablet-width) {
       width: 100%;
       margin: 42px 0 5px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 45px 0 5px 0;
     }
   }
 
@@ -103,12 +108,14 @@
   margin-bottom: 20px;
   padding: 0;
   text-align: center;
-    @media (min-width: $tablet-width) {
-      @include font-set(21px, 26px, 700);
-    }
+
+  @media (min-width: $tablet-width) {
+    @include font-set(21px, 26px, 700);
+  }
 
   &--radio {
     margin-bottom: 11px;
+
     @media (min-width: $tablet-width) {
       padding-bottom: 33px;
       padding-right: 52px;
@@ -149,6 +156,7 @@
 
   &--textarea {
     text-align: center;
+
     @media (min-width: $tablet-width) {
       text-align: center;
     }
@@ -160,6 +168,8 @@
   }
 
   &--contacts {
+    margin-bottom: 16px;
+
     @media (min-width: $tablet-width) {
       text-align: center;
     }
@@ -247,6 +257,7 @@
 
 .review-form__phone span {
   margin-right: 4px;
+
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -288,7 +299,7 @@
 .review-form__input {
   @include font-set(18px, 26px, 700);
   width: 65%;
-  padding-left: 15px;
+  padding-left: 22px;
   padding-top: 15px;
   padding-bottom: 18px;
   background-color: $secondary-color;
@@ -309,6 +320,7 @@
 
   &--phone {
     width: 100%;
+
     @media (min-width: $desktop-width) {
       padding-right: 83px;
     }
@@ -316,6 +328,7 @@
 
   &--email {
     width: 100%;
+
     @media (min-width: $desktop-width) {
       padding-right: 83px;
     }
@@ -394,10 +407,28 @@
 
 .review-form__label-radio::after {
   content: "";
+  display: block;
+  position: absolute;
   left: 0;
-  cursor: pointer;
+  top: 49px;
+  margin-top: -35px;
   height: 55px;
   width: 55px;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.review-form__label-radio:hover::after,
+.review-form__label-radio:focus::after {
+  content: "";
+  background-color: $form-img;
+}
+
+.review-form__label-radio:active::after {
+  content: "";
+  background-color: $grey-active;
 }
 
 .review-form__radio:checked + label::after {
@@ -533,6 +564,14 @@
   }
 }
 
+.review-form__label-check:hover::after {
+  background-color: $form-img;
+}
+
+.review-form__label-check:active::after {
+  background-color: $grey-active;
+}
+
 .review-form__textarea {
   @include font-set(18px, 26px, 700);
   padding-left: 19px;
@@ -549,7 +588,7 @@
     @include font-set(16px, 26px, 700);
     width: 100%;
     margin-top: 39px;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -571,6 +610,7 @@
 
 .review-form__wrapper-button {
   text-align: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
@@ -714,21 +754,21 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
-  @include font-set(30px, 35px, 700);
-  margin: 42px 0 0 0;
+    @include font-set(30px, 35px, 700);
+    margin: 42px 0 0 0;
   }
 }
 
 .review-form__text-comment {
-    @include font-set(14px, 24px, 400);
-    text-align: center;
-    text-transform: uppercase;
-    color: $black;
-    padding: 18px 42px;
+  @include font-set(14px, 24px, 400);
+  text-align: center;
+  text-transform: uppercase;
+  color: $black;
+  padding: 18px 42px;
 
-    @media (min-width: $tablet-width) {
-      margin: 18px 82px;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 18px 82px;
+  }
 }
 
 .review-form__bg-button {
