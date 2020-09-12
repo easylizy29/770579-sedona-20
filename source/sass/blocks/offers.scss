@@ -19,10 +19,10 @@
   @include button-throw;
   margin-left: 20px;
   width: 280px;
-  height: 55px;
+  height: 57px;
   background-color: $primary-color;
   text-transform: uppercase;
-  margin-top: 16px;
+  margin-top: 12px;
   margin-bottom: 50px;
   font-size: 18px;
   font-weight: 700;
@@ -53,13 +53,13 @@
 .offers__title {
   @include font-set(21px, 40px, 700);
   text-align: center;
-  padding-top: 6px;
+  padding-top: 9px;
 
   @media (min-width: $tablet-width) {
     @include font-set(30px, 40px, 700);
     width: 42%;
-    padding-top: 11px;
-    padding-bottom: 3px;
+    padding-top: 9px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -71,18 +71,17 @@
 .offers__text {
   @include font-set(14px, 24px, 400);
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
-    width: 58%;
+    width: 64%;
     margin: 0 0 23px 0;
-    padding: 0 25px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 55%;
+    width: 39%;
     padding: 0;
   }
 }
