@@ -121,6 +121,22 @@ li.gallery__item img {
     margin: -7px 0 0 0;
     padding: 16px 17px 8px 20px;
   }
+
+  &--dark-grey  {
+    @media (min-width: $tablet-width) {
+      background-color: $form-img;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--dark-grey .assessment__text {
+    @media (min-width: $tablet-width) {
+      margin: -4px 18px 0 0;
+    }
+  }
 }
 
 .gallery__caption-item {

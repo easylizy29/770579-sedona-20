@@ -122,6 +122,7 @@
     background-size: 39px 36px;
     background-image: url("../img/burger.svg");
     margin: 3px 0 0 21px;
+    fill: #fff;
 
     @media (min-width: $tablet-width) {
       background-size: 30%;
@@ -385,6 +386,7 @@
 
     @media (min-width: $tablet-width) {
       margin: -27px 0 0 0;
+      width: 92%;
     }
 
     @media (min-width: $desktop-width) {
