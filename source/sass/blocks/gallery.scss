@@ -76,7 +76,7 @@
 
   &--big .assessment__button {
     @media (min-width: $tablet-width) {
-    margin-right: 18px;
+      margin-right: 18px;
     }
   }
 }
@@ -122,7 +122,7 @@ li.gallery__item img {
     padding: 16px 17px 8px 20px;
   }
 
-  &--dark-grey  {
+  &--dark-grey {
     @media (min-width: $tablet-width) {
       background-color: $form-img;
     }
